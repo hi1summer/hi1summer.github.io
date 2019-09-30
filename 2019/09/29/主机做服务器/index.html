@@ -130,10 +130,9 @@
     
     
     </div>
-    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="4">
-
+<input type="hidden" id="yelog_site_word_count" value="468">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -253,6 +252,8 @@
     </div>
     <div class="article-meta">
         
+        <span>字数:239</span>
+        
         
         <span id="busuanzi_container_page_pv">
             阅读:<span id="busuanzi_value_page_pv">
@@ -316,27 +317,10 @@
 </ol>
 
       
-       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
 </article>
 
 
-<p>
-    <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
-</p>
-
-
-<div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>主机做服务器</p>
-    
-    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="summer">summer</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-09-29, 23:34:37</p>
-    <p><span class="copy-title">最后更新:</span>2019-09-30, 22:41:27</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/29/主机做服务器/" title="主机做服务器">http://summerandrope.github.io/2019/09/29/主机做服务器/</a>
-    <p>
-        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
-    </p>
-</div>
 
 
 
@@ -366,24 +350,6 @@
 </div>
 <div class="acParent"></div>
 
-<div class="hide_box" onclick="dashangToggle()"></div>
-<div class="shang_box">
-    <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
-    <div class="shang_tit">
-        <p>喜欢就点赞,疼爱就打赏</p>
-    </div>
-    <div class="shang_payimg">
-        <div class="pay_img">
-            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
-            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
-        </div>
-    </div>
-    <div class="shang_payselect">
-        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
-    </div>
-</div>
-
-
 </body>
 <script src="/js/jquery.pjax.js?v=1.0.1" ></script>
 
@@ -405,14 +371,6 @@
         
 
         /*渲染打赏样式*/
-        
-        $("input[name=pay]").on("click", function () {
-            if($("input[name=pay]:checked").val()=="weixin"){
-                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
-            } else {
-                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
-            }
-        })
         
 
         /*高亮代码块行号*/
@@ -444,11 +402,6 @@
     }
 
     /*打赏页面隐藏与展示*/
-    
-    function dashangToggle() {
-        $(".shang_box").fadeToggle();
-        $(".hide_box").fadeToggle();
-    }
     
 
 </script>
@@ -492,13 +445,13 @@
     
     
     .nav {
-        width: 542px;
+        width: 622px;
     }
     .nav.fullscreen {
-        margin-left: -542px;
+        margin-left: -622px;
     }
     .nav-left {
-        width: 120px;
+        width: 200px;
     }
     
     
@@ -584,25 +537,6 @@
     
 
     /*文章列表背景图*/
-    
-    .nav-right:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.3;
-        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        -ms-background-size: cover;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-size: cover;
-    }
     
 
     
