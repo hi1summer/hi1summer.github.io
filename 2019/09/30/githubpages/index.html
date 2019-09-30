@@ -212,6 +212,14 @@
     
         
             
+            <li><div data-rel="index">index<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="技术">技术<small>(3)</small></div>
                 
             </li>
@@ -263,6 +271,10 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
+        <a href="javascript:" class="color1">index</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a href="javascript:" class="color4">服务器</a>
     </li>
     
@@ -272,20 +284,12 @@
     
     <nav id="title-list-nav">
         
-        <a  class=""
+        <a id="top" class="index "
            href="/2019/09/29/about/"
-           data-tag=""
+           data-tag="index"
            data-author="" >
             <span class="post-title" title="about">about</span>
             <span class="post-date" title="2019-09-29 23:25:12">2019/09/29</span>
-        </a>
-        
-        <a  class="技术 "
-           href="/2019/09/29/个人服务器网站相关/"
-           data-tag="服务器"
-           data-author="" >
-            <span class="post-title" title="个人服务器网站相关">个人服务器网站相关</span>
-            <span class="post-date" title="2019-09-29 23:46:36">2019/09/29</span>
         </a>
         
         <a  class="技术 "
@@ -302,6 +306,14 @@
            data-author="" >
             <span class="post-title" title="主机做服务器">主机做服务器</span>
             <span class="post-date" title="2019-09-29 23:34:37">2019/09/29</span>
+        </a>
+        
+        <a  class="技术 "
+           href="/2019/09/29/个人服务器网站相关/"
+           data-tag="服务器"
+           data-author="" >
+            <span class="post-title" title="个人服务器网站相关">个人服务器网站相关</span>
+            <span class="post-date" title="2019-09-29 23:46:36">2019/09/29</span>
         </a>
         
     </nav>
@@ -476,7 +488,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#服务器',],
+            'data': ['#index','#服务器',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
